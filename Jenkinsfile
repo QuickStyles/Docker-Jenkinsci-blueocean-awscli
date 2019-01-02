@@ -21,5 +21,9 @@ pipeline {
         sh "docker build -t jenkinsaws:${env.BUILD_ID} ."
       }
     }
+
+    stage('push to repository') {
+      sh "aws help"
+    }
   }
 }
