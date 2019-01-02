@@ -24,7 +24,7 @@ pipeline {
 
     stage('push to repository') {
       steps {
-        sh "aws help"
+        sh "~/bin/aws help"
       }
     }
   }
