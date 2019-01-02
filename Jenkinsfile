@@ -24,7 +24,7 @@ pipeline {
 
     stage('push to repository') {
       steps {
-        sh "~/bin/aws help"
+        sh "echo AWS_ACCESS_KEY_ID"
       }
     }
   }
