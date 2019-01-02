@@ -25,6 +25,8 @@ pipeline {
     stage('push to repository') {
       steps {
         sh "echo AWS_ACCESS_KEY_ID"
+        sh "printenv"
+        sh " echo $AWS_ACCESS_KEY_ID"
       }
     }
   }
